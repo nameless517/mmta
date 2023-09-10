@@ -2,6 +2,6 @@
 *.tfstate         # Infrastructure condition
 *.tfstate.backup  # Infrastructure state backup
 .terraform/       # Terraform module directories
-/terraform/terraform.tfvars
+*.tfvars
 .env              # variable file
 *.pem             # Keys with pem extension
