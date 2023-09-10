@@ -1,19 +1,8 @@
-variable "hcloud_token"{}
-
-variable "name"{
-default = "hcmta"
+terraform {
+  required_providers {
+    hcloud = {
+      source = "hetznercloud/hcloud"
+    }
+  }
+  required_version = ">= 0.13"
 }
-
-variable "image" {
-default = "debian-12"
-}
-
-variable = "server_type" {
-default = "cx11"
-}
-
-variable = "location" {
-default = "fsn1"
-}
-
-variable "public_key" {}
